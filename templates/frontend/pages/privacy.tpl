@@ -1,0 +1,21 @@
+{**
+ * templates/frontend/pages/privacy.tpl
+ *
+ * Copyright (c) 2014-2019 Simon Fraser University
+ * Copyright (c) 2003-2019 John Willinsky
+ * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ * - modified in 2020 by Andrew Ollett
+ * 
+ * @brief Display the page to view the privacy policy.
+ *
+ * @uses $currentContext Journal|Press The current journal or press
+ *}
+
+{include file="frontend/components/header.tpl" pageTitle="manager.setup.privacyStatement"}
+
+<div class="page page_privacy">
+     <h2>Privacy Statement</h2>
+     {$privacyStatement}
+</div><!-- .page -->
+
+{include file="frontend/components/footer.tpl"}

@@ -1,0 +1,20 @@
+.site-footer {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #363636;
+}
+.site-footer a {
+    color: white;
+    margin-right: 5%;
+}
+
+.site-content {
+    min-height: 90vh;
+}
+
+.footer-left div p {
+   color:#aaa;
+}
+.footer-left div p a {
+    margin:0;
+}

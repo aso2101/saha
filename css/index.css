@@ -1,0 +1,215 @@
+/* PKP sidebar */
+
+
+
+.pkp_structure_sidebar .pkp_block{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+    margin-bottom: 30px;
+}
+
+.pkp_block .title {
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-weight:800;
+    text-transform:lowercase;
+    font-size:1.15rem;
+    letter-spacing: 0.0625em;
+    padding: .75rem 1.25rem;
+    background-color: rgba(0,0,0,.03);
+    text-align: center;
+}
+.pkp_block .content {
+    flex: 1 1 auto;
+}
+.pkp_block ul {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.pkp_block a {
+    padding: .5rem 1rem;
+    text-align:center;
+    display: flex;
+    color: dimgrey;
+    align-items: center;
+}
+.block_information a {
+    justify-content:center;    
+    font-style:italic;
+    text-transform:lowercase;
+
+}
+.pkp_block a:hover {
+    text-decoration: none;
+    background-color: #f9f9f9;
+    color: dimgrey;
+}
+.block_information a:before,
+.block_information a:after  {
+    font-family: 'Printers Ornaments One';
+    font-style:normal;
+}
+.block_information a:before {
+    content: "r\0000a0";
+}
+.block_information a:after {
+    content: "\0000a0r";
+}
+.pkp_block li {
+    border-radius: 0;
+    position: relative;
+    margin-bottom: -1px;
+    background-color: #fff;
+    border-top: 1px solid rgba(0,0,0,.125);
+    display: block;
+}
+.pkp_block ul li:last-child {
+    border-bottom: 1px solid rgba(0,0,0,.125);
+}
+
+/* custom blocks */
+.pkp_block.block_custom .content {
+    padding: .75rem 1.25rem;
+}
+.pkp_block.block_custom a {
+    padding: 0;
+}
+
+/* submission block */
+.block_make_submission .content {
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    background-color: #868e96;
+    text-align:center;
+}
+.block_make_submission .content:hover {
+    background-color: #60676f;
+}
+
+.block_make_submission .content a {
+    color: white;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    text-transform: lowercase;
+    font-size:1.15rem;
+    margin: auto 0;
+    font-weight:700;
+}
+.block_make_submission .content a:hover {
+    background-color: #60676f;
+}
+
+/* recent articles block */
+.recent-articles-section-title h3, 
+.journal-summary-title h3,
+.announcements-title h3 {
+    padding: .75rem 1.25rem;
+    background-color: rgba(0,0,0,.03);
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+    text-align: center;
+    font-size: 17px;
+    font-weight: normal;
+    margin-left: -5px;
+    margin-right: -5px;
+    text-transform: capitalize;
+}
+.list-announce {
+    list-style-type:none;
+    margin-left:2rem;
+}
+.list-announce li:before {
+    font-family:'Printers Ornaments One';
+    content: 'e';
+    margin-left:-2rem;
+}
+.list-announce li .announcement_date {
+    color:#777;
+}
+.list-announce li .announcement_date:before {
+    content:" (";
+}
+.list-announce li .announcement_date:after {
+    content:"): ";
+}
+.list-announce li .readmore {
+    text-transform:lowercase;
+}
+.list-announce li .readmore:before {
+    content:"(";
+}
+.list-announce li .readmore:after {
+    content:")";
+}
+.recent-articles-section-title {
+    margin-bottom: 20px;
+}
+a.recent-article-title {
+    color: black;
+    font-size: 19px;
+    display: block;
+}
+a.recent-article-title:hover {
+    text-decoration: none;
+    color: #404040;
+}
+.recent-wrapper{
+    margin-bottom: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* all index page */
+.index-page-content {
+    margin-top: 20px;
+}
+
+/* recent issues block */
+.recent-issues-slider {
+    margin-bottom: 30px;
+}
+
+.recent-issues-slider h3 {
+    padding: .75rem 1.25rem;
+    background-color: rgba(0,0,0,.03);
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+    text-align: center;
+    font-size: 17px;
+    font-weight: normal;
+    margin-left: -15px;
+    margin-right: -15px;
+    text-transform: capitalize;
+}
+
+#carouselIndicators {
+    margin-bottom: 30px;
+}
+
+#carouselIndicators .carousel-inner {
+    border-radius: 5px;
+}
+
+/* journal summary */
+
+.summary-content {
+    padding: 10px 10px 20px 10px;
+    text-align: justify;
+}
+/* journal description */
+.journalDescription,.additional_content {
+    padding:0.5rem;
+}
+.additional_content {
+    font-size:0.9rem;
+}
+

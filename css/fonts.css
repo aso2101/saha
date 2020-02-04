@@ -1,0 +1,65 @@
+/* Load the IndUni-H font */
+@font-face {
+    font-family: "IndUni-H";
+    src: url(../fonts/IndUni-H-Regular.otf);
+}
+@font-face {
+    font-family: "IndUni-H";
+    src: url(../fonts/IndUni-H-Bold.otf);
+    font-weight:bold;
+}
+@font-face {
+    font-family: "IndUni-H";
+    src: url(../fonts/IndUni-H-Oblique.otf);
+    font-style:italic;
+}
+@font-face {
+    font-family: "IndUni-H";
+    src: url(../fonts/IndUni-H-BoldOblique.otf);
+    font-style:italic;
+    font-weight:bold;
+}
+@font-face {
+    font-family: "IndUni-T";
+    src: url(../fonts/IndUni-T-Roman.otf);
+}
+@font-face {
+    font-family: "IndUni-T";
+    src: url(../fonts/IndUni-T-Bold.otf);
+    font-weight:bold;
+}
+@font-face {
+    font-family: "IndUni-T";
+    src: url(../fonts/IndUni-T-Italic.otf);
+    font-style:italic;
+}
+@font-face {
+    font-family: "IndUni-T";
+    src: url(../fonts/IndUni-T-BoldItalic.otf);
+    font-style:italic;
+    font-weight:bold;
+}
+@font-face {
+    font-family: "Alegreya Sans SC";
+    src: url(../fonts/AlegreyaSansSC-Bold.ttf);
+    font-weight:700;
+}
+@font-face {
+    font-family: "Alegreya Sans SC";
+    src: url(../fonts/AlegreyaSansSC-ExtraBold.ttf);
+    font-weight:800;
+}
+@font-face {
+    font-family: "Alegreya Sans SC";
+    src: url(../fonts/AlegreyaSansSC-Black.ttf);
+    font-weight:900;
+}
+@font-face {
+    font-family: "Alegreya Sans SC";
+    src: url(../fonts/AlegreyaSansSC-Regular.ttf);
+}
+/* fleurons */
+@font-face {
+    font-family: "Printers Ornaments";
+    src: url(../fonts/printorn.ttf);
+}

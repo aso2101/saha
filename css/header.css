@@ -1,0 +1,132 @@
+/* Site title */
+
+.site-title-wraper {
+    background-color: #fff;
+    min-height: 4em;
+    padding-bottom: 5px;
+}
+.site-title-wraper a {
+    color: dimgrey;
+    font-size: 26px;
+    vertical-align: middle;
+}
+.site-title-wraper a:hover {
+    text-decoration: none;
+}
+.site-name {
+    text-align: center;
+    font-weight: 500;
+}
+div.site-name {
+    padding-top: 10px;
+}
+
+#navigationPrimary {
+    margin-bottom:0.5rem;
+}
+#navigationPrimary .nav-item a, .search-btn {
+    font-family: "Alegreya Sans SC", sans-serif;
+    text-transform:lowercase;
+    font-size:1.15rem;
+    font-weight:700;
+    padding:0.25rem 1rem;
+}
+#navigationPrimary .nav-item a:hover {
+    color:#777;
+}
+.search-btn {
+    padding:0.25rem 0.5rem;
+}
+#navigationPrimary .nav-item .dropdown-menu {
+    margin:0;
+}
+#navigationPrimary .nav-item .dropdown-menu a {
+    font-family: "IndUni-H", sans-serif;
+    font-size:1.0rem;
+    text-transform:none;
+    font-weight:400;
+}
+.site-navbar-wraper {
+    background: #f2f2f2;
+}
+
+#navigationUser {
+    list-style:none;
+}
+#navigationUser a {
+    text-decoration: none;
+    padding:0.25rem 1rem;
+    color: #000;
+}
+#navigationUser a.profile.dropdown-item {
+    color: #212529;
+}
+
+@media (max-width: 767px) {
+    a.journal-name {
+        font-size: 18px;
+    }
+}
+@media (max-width: 575px) {
+    a.journal-name {
+        font-size: 14px;
+        margin-right: 0px;
+    }
+}
+a.dropdown-item:active {
+    background-color:#fff;
+}
+#navigationPrimary {
+    justify-content: space-between;
+}
+.site-navbar-wraper #navigationPrimary .nav-link, .pkp_page_article .site-navbar-wraper > a {
+    color: black;
+}
+
+/* search form */
+.search-input-tag {
+    border-top: 0;
+    border-top-left-radius: 0;
+    font-family:"IndUni-H", sans-serif;
+    font-style:italic;
+    color:#cccccc;
+}
+.input-group-btn {
+    margin-left:0.25rem;
+}
+.search-btn {
+    text-transform:lowercase;
+    font-weight:700;
+}
+
+/* breadcrumb */
+.breadcrumb {
+    background-color: white;
+    margin-top: 20px;
+}
+
+/* header logo */
+.is_img.journal-name img {
+    width:14rem;
+    max-width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.journal-logo {
+    margin-left:1rem;
+    margin-right:1rem;
+}
+
+/* hide user menu on article page */
+.show-user-menu {
+    padding-top: 6px;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: #d61635;
+    cursor: pointer;
+}
+.show-user-menu.hidden {
+    display: none;
+}

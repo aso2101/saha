@@ -1,0 +1,22 @@
+{
+    "name": "doc/jatsParser",
+    "description": "JATS XML parser",
+    "type": "library",
+    "license": "GPLv3",
+    "authors": [
+        {
+            "name": "Vitaliy Bezsheiko",
+            "email": "vitaliybezsh@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.2",
+        "tecnickcom/tcpdf": "^6.2.17"
+    },
+    "autoload": {
+        "psr-4": {
+            "JATSParser\\": "src/JATSParser"
+        }
+    }
+}

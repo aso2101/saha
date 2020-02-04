@@ -1,0 +1,21 @@
+/**
+* css/announcements.css
+*
+* Copyright (c) 2018 Vitaliy Bezsheiko
+* Distributed under the GNU GPL v3.
+*
+* @brief For rendering announcements
+*/
+
+.announcement-title a {
+}
+
+.announcement_title {
+    font-weight: bold;
+}
+
+.obj_announcement_full {
+    margin-top: 60px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
