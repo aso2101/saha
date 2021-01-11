@@ -6,7 +6,7 @@
  * Copyright (c) 2017 Vitaliy Bezsheiko, MD
  * Distributed under the GNU GPL v3.
  * - modified for saha theme by andrew ollett
- * 
+ *
  * @class SahaThemePlugin
  *
  * @brief Old Gregg theme (+ derivative SAHA theme) is developed on the basis of bootstrap 4; it has build-in fucntionality of JATS Parser Plugin and browse latest articles plugin
@@ -72,10 +72,11 @@ class SahaThemePlugin extends ThemePlugin
 		$this->addScript('jquery', 'jquery/jquery.min.js');
 		$this->addScript('popper', 'bootstrap/js/popper.min.js');
 		$this->addScript('bootstrap', 'bootstrap/js/bootstrap.min.js');
+		$this->addScript('sanscript', 'sanscript/sanscript.js');
 		$this->addScript('fontawesome', 'js/fontawesome-all.min.js');
 		$this->addScript('article', 'js/article.js');
 		$this->addScript('jats', "js/jats.min.js");
-
+		$this->addScript('transliterator', "js/transliterator.js");
 
 		$this->addStyle(
 			'my-custom-font1',
