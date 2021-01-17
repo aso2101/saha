@@ -390,23 +390,24 @@ class SahaThemePlugin extends ThemePlugin
 		/* get number of latest article to display from user input; if there was none - use default */
 		$latestArticles = $this->getOption("latestArticlesNumber");
 		if (is_null($latestArticles)) {
-			$latestArticles = SAHA_LATEST_ARTICLES_DEFAULT;
+			$latestArticles = OLDGREGG_LATEST_ARTICLES_DEFAULT;
 		} else {
 			$latestArticles = intval($latestArticles);
 		}
-		$rangeArticles = new DBResultRange($latestArticles, 1);
-		$publishedArticleDao = DAORegistry::getDAO('PublishedArticleDAO');
+
 		/* retrieve current journal id from the request */
 		$request = $this->getRequest();
 		$journal = $request->getJournal();
 		$journalId = $journal->getId();
+
 		/* retrieve latest articles */
-		$publishedArticleObjects = $publishedArticleDao->getPublishedArticlesByJournalId($journalId, $rangeArticles, $reverse = true);
-		$publishedArticles = array();
-		while ($publishedArticle = $publishedArticleObjects->next()) {
-			$publishedArticles[] = $publishedArticle;
-		}
-		$smarty->assign('publishedArticles', $publishedArticles);
+		$publishedArticleObjects = Services::get("submission")->getMany([
+			'status' => STATUS_PUBLISHED,
+			'contextId' => $journalId,
+			'count' => $latestArticles
+		]);
+
+		$smarty->assign('publishedArticles', iterator_to_array($publishedArticleObjects));
 	}
 
 	public function latestIssuesSlider($hookName, $args) {
