@@ -18,6 +18,7 @@ import('lib.pkp.classes.plugins.ThemePlugin');
 define('SAHA_CSL_STYLE_DEFAULT', 'vancouver');
 define('SAHA_LATEST_ARTICLES_DEFAULT', 20);
 define('SAHA_ISSUE_COVER_RELATIVE_URL', 'images/issue_default.jpg');
+define('TRANSLITERATOR_RELATIVE_URL', 'images/transliterate.svg');
 define('SAHA_LATEST_ISSUES_DEFAULT', 3);
 define("CREATE_PDF_QUERY", "download=pdf");
 
@@ -68,6 +69,7 @@ class SahaThemePlugin extends ThemePlugin
 		$this->addStyle('announcements', 'css/announcements.css');
 		$this->addStyle('jats', 'css/jats.min.css');
 		$this->addStyle('fonts', 'css/fonts.css');
+		$this->addStyle('transliterate', 'css/transliterate.css');
 
 		$this->addScript('jquery', 'jquery/jquery.min.js');
 		$this->addScript('popper', 'bootstrap/js/popper.min.js');
@@ -200,7 +202,7 @@ class SahaThemePlugin extends ThemePlugin
 		$orcidImage = $this->getPluginPath() . '/templates/images/orcid.png';
 
 		$templateMgr->assign(array(
-			"htmlDocument" => $htmlDocument->getHmtlForGalley(),
+			"htmlDocument" => $htmlDocument->getHtmlForGalley(),
 			'jatsParserOrcidImage' => $orcidImage,
 		));
 
@@ -390,7 +392,7 @@ class SahaThemePlugin extends ThemePlugin
 		/* get number of latest article to display from user input; if there was none - use default */
 		$latestArticles = $this->getOption("latestArticlesNumber");
 		if (is_null($latestArticles)) {
-			$latestArticles = OLDGREGG_LATEST_ARTICLES_DEFAULT;
+			$latestArticles = SAHA_LATEST_ARTICLES_DEFAULT;
 		} else {
 			$latestArticles = intval($latestArticles);
 		}
@@ -439,10 +441,13 @@ class SahaThemePlugin extends ThemePlugin
 		}
 
 		$defaultCoverImageUrl = "/" . $this->getPluginPath() . "/" . SAHA_ISSUE_COVER_RELATIVE_URL;
+		$transliteratorImage = $this->getPluginPath(). "/" . TRANSLITERATOR_RELATIVE_URL;
 
 
 		$smarty->assign('latestIssues', $latestIssues);
 		$smarty->assign('defaultCoverImageUrl', $defaultCoverImageUrl);
+		$smarty->assign('transliteratorImage', $transliteratorImage);
+
 	}
 
 	public function journalDescription ($hookName, $args) {

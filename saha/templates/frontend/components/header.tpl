@@ -78,6 +78,8 @@
 		                {/if}
                             </div><!-- div containing the navigation and search bar !-->
 	 	        </div>
+			{include file="frontend/components/transliterate.tpl"}
+
                    {* user menu *}
 		   <div class="ml-auto">
     		       <nav class="user-nav">

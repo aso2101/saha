@@ -1,0 +1,45 @@
+#transliterationButton {
+    border: 2px black solid;
+    background-color: #ede3cc;
+    mid-width: 36px !important;
+}
+#transliterationButton:focus {
+    box-shadow: 0 0 0 0.2rem #ede3cc;
+}
+.dropdown-menu-twocolumn {
+    line-height: 1.75rem;
+    width: 550px !important;
+    padding-top: 0;
+    margin-top: 0;
+    padding-bottom: 0;
+}
+.dropdown-menu-twocolumn div.col-sm-6:first-child {
+    padding-right: 0;
+    border-right: 1px black solid;
+}
+.dropdown-menu-twocolumn div.col-sm-6:nth-child(2) {
+    padding-left: 0;
+}
+.dropdown-menu-twocolumn .dropdown-item {
+    padding: 0.2rem 0.5rem;
+}
+.dropdown-menu-twocolumn .dropdown-item.active, .dropdown-menu-twocolumn .dropdown-item:hover {
+    color: black !important;
+    background-color: #ede3cc !important;
+}
+.dropdown-menu-twocolumn .dropdown-item.active .text-muted, .dropdown-menu-twocolumn .dropdown-item:hover .text-muted {
+    color: black !important;
+}
+.dropdown-menu-twocolumn .dropdown-item:active {
+    background-color: #ede3cc !important;
+    color: white !important;
+}
+.dropdown-menu-twocolumn .dropdown-item:active .text-muted {
+    color: white !important;
+}
+.dropdown-menu-twocolumn #scripts-info, .dropdown-menu-twocolumn #options-info {
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 0.25rem;
+}

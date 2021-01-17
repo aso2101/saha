@@ -16,7 +16,7 @@
             {/if}
             <li class="nav-item">
                 <a class="nav-link" href="{url page="index"}">
-                {translate key="plugins.gregg.home"}
+                {translate key="plugins.saha.home"}
                 </a>
             </li>
             {foreach key=field item=navigationMenuItemAssignment from=$navigationMenu->menuTree}
